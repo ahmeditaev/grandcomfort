@@ -1,0 +1,41 @@
+.video
+  padding-top: 63px
+  padding-bottom: 70px
+.video__title
+  font-size: 21px
+  line-height: 25px
+  padding: 0 33% 19px 33%
+  text-transform: lowercase
+  color: #FF0000
+  +max-width-768
+    padding: 0 5% 19px 5%
+.video__subtitle
+  font-size: 16px
+  line-height: 19px
+  padding: 0 33% 41px 33%
+  color: #6A696B
+  font-family: $roboto
+  font-weight: $light
+  text-align: center
+  +max-width-768
+    padding: 0 5% 19px 5%
+.video-list
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  +max-width-1128
+    justify-content: center
+.video-list__item
+  position: relative
+  line-height: 0
+  +max-width-1128
+    margin-bottom: 30px
+    &:first-child
+      margin-right: 30px
+  +max-width-768
+    &:first-child
+      margin-right: 0
+
+.video-single
+  position: relative
+  line-height: 0

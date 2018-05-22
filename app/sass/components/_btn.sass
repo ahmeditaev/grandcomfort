@@ -1,0 +1,51 @@
+
+.btn
+  display: inline-block
+  color: $colorPrimary
+  font-family: $roboto
+  font-weight: $regular
+  font-size: 16px
+  background: #D30813
+  &:hover
+    background: rgba(0,0,0, .5)
+    -webkit-transition: opacity 0.4s
+    -moz-transition: opacity 0.4s
+    -ms-transition: opacity 0.4s
+    -o-transition: opacity 0.4s
+    transition: opacity 0.4s
+
+.btn-shopping
+  font-weight: $bold
+  background: none
+  padding: 5px 26px
+  text-transform: uppercase
+  vertical-align: middle
+  border: 2px solid $colorPrimary
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  +max-width-1200
+    margin-right: 20px
+
+.btn-choose-category
+  font-weight: $light
+  font-size: 14px
+  line-height: 17px
+  padding: 18px 73px
+  border: 0.5px solid #808080
+  &:hover
+    background: #000
+
+.btn-share
+  padding: 12px 87px
+  -webkit-border-radius: 6px
+  -moz-border-radius: 6px
+  border-radius: 6px
+  text-transform: uppercase
+  +max-width-480
+    padding: 12px 60px
+  &:hover
+    background: #000
+
+.btn-share--small
+  padding: 12px 38px!important

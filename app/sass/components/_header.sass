@@ -1,0 +1,71 @@
+//               START HEADER TOP
+.header__top
+  padding: 13px 0 11px 0
+  background: rgb(211,8,19)
+  background: -webkit-linear-gradient(246deg, rgba(211,8,19,1) 0%, rgba(106,4,10,1) 100%)
+  background: -o-linear-gradient(246deg, rgba(211,8,19,1) 0%, rgba(106,4,10,1) 100%)
+  background: linear-gradient(204deg, rgba(211,8,19,1) 0%, rgba(106,4,10,1) 100%)
+
+.social-link
+  display: inline-block
+  margin-right: 41px
+  vertical-align: middle
+  +max-width-480
+    margin-right: 15px
+
+.social-link__item
+  display: inline-block
+  &:not(:last-child)
+    padding-right: 41px
+  +max-width-480
+    &:not(:last-child)
+      padding-right: 20px
+  .social-link__link
+    display: inline-block
+    color: $colorPrimary
+    .fa-facebook
+      font-size: 23px
+    .fa-instagram
+      font-size: 26px
+
+//               END HEADER TOP
+//               START HEADER BOTTOM
+.header__bottom
+  position: relative
+  padding: 11px 0 6px 0
+  background: $colorPrimary
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16)
+  -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16)
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16)
+.main-logo
+  display: inline-block
+  width: 270px
+  font-size: 0
+  vertical-align: middle
+  margin-right: 146px
+  +max-width-1200
+    margin-right: 0
+  +max-width-1128
+    display: block
+    margin: 0 auto
+  +max-width-768
+    margin: 0
+  .main-logo__image
+    width: 100%
+    height: auto
+  +max-width-480
+    margin-right: 0
+
+.button--toggle
+  position: absolute
+  width: 39px
+  height: 39px
+  top: 14px
+  right: 3%
+  +toggleable-button
+  +min-width-768
+    display: none
+
+
+//               END HEADER BOTTOM
+

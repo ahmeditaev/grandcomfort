@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491 310">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-1 {
+        font-size: 16px;
+      }
+
+      .cls-2 {
+        font-size: 29px;
+      }
+
+      .cls-3 {
+        font-size: 47px;
+      }
+
+      .cls-4 {
+        font-size: 66px;
+      }
+
+      .cls-5 {
+        font-size: 96px;
+      }
+
+      .cls-6 {
+        font-size: 41px;
+      }
+
+      .cls-7 {
+        font-size: 36px;
+      }
+    </style>
+  </defs>
+  <g id="Group_277" data-name="Group 277" transform="translate(-447 -2091)">
+    <g id="filter" transform="translate(98.5 1469)">
+      <text id="МАГАЗИНЫ" class="cls-1" transform="translate(577.5 639)"><tspan x="0" y="0">МАГАЗИНЫ</tspan></text>
+    </g>
+    <text id="lOGO" class="cls-2" transform="translate(516 2385)"><tspan x="0" y="0">lOGO</tspan></text>
+    <text id="lOGO-2" data-name="lOGO" class="cls-3" transform="translate(684 2337)"><tspan x="0" y="0">lOGO</tspan></text>
+    <text id="lOGO-3" data-name="lOGO" class="cls-4" transform="translate(772 2250)"><tspan x="0" y="0">lOGO</tspan></text>
+    <text id="lOGO-4" data-name="lOGO" class="cls-5" transform="translate(447 2288)"><tspan x="0" y="0">lOGO</tspan></text>
+    <text id="lOGO-5" data-name="lOGO" class="cls-6" transform="translate(617 2177)"><tspan x="0" y="0">lOGO</tspan></text>
+    <text id="lOGO-6" data-name="lOGO" class="cls-7" transform="translate(799 2383)"><tspan x="0" y="0">lOGO</tspan></text>
+  </g>
+</svg>

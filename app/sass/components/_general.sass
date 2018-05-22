@@ -1,0 +1,251 @@
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+a
+  text-decoration: none
+
+ul
+  list-style-type: none
+
+.img-responsive
+  max-width: 100%
+  height: auto
+.img-responsive--height-100
+  height: 100%
+
+//ширина 12 колонок
+.container
+  max-width: 1160px
+  min-width: 320px
+  width: 100%
+  margin: 0 auto
+
+//ширина 10 колонок
+.container-less
+  max-width: 968px
+  min-width: 320px
+  width: 100%
+  margin: 0 auto
+.container--768
+  max-width: 768px
+  width: 100%
+.pull-left
+  float: left!important
+.pull-right
+  float: right!important
+.text-right
+  text-align: left!important
+.text-right
+  text-align: right!important
+
+.nav-menu
+  display: inline-block
+  position: relative
+  background: none
+  &.is-closed
+    display: inline-block
+  +max-width-1128
+    display: block
+    text-align: center
+    &.is-closed
+      display: block
+
+  +max-width-768
+    display: none
+    width: 100%
+    background: inherit
+    &.is-open
+      display: block
+      vertical-align: middle
+    &.is-closed
+      display: none
+
+  .nav-menu__link
+    display: inline-block
+    text-transform: uppercase
+    color: #000000
+    font-family: $roboto
+    font-weight: $medium
+    font-size: 14px
+    padding: 0 18px
+    &.active
+      color: #D30813
+    &:hover
+      color: #D30813
+    &:last-child
+      padding-right: 0
+    +max-width-768
+      display: block
+      text-align: center
+      padding: 10px 0 10px 0
+
+.section__title
+  font-family: $roboto
+  font-weight: $bold
+  font-size: 16px
+  color: #E80000
+  text-align: center
+  text-transform: uppercase
+  padding-bottom: 27px
+
+.content__description
+  font-family: $montserrat
+  font-weight: $light
+  font-size: 12px
+  line-height: 24px
+  color: #6A696B
+  padding-right: 13%
+  padding-bottom: 50px
+  +max-width-1128
+    padding-right: 8%
+    padding-left: 8%
+  +max-width-480
+    padding-right: 5%
+    padding-left: 5%
+
+//        Start masonry grid type 1
+.grid-type-1
+  margin: 0 auto
+.grid-sizer
+  width: 395px
+.grid-type-1__item
+  position: relative
+  width: 395px
+  //width: 40%
+  height: 276px
+  float: left
+  +max-width-992
+    margin: 10px
+  +max-width-768
+    width: 303px
+    height: 212px
+  +max-width-480
+    width: 285px
+    height: 200px
+.grid-type-1__item--width-2
+  width: 285px
+  //width: 30%
+.grid-type-1__item--width-4
+  width: 571px
+  //width: 60%
+  +max-width-768
+    width: 300px
+  +max-width-480
+    width: 285px
+.grid-type-1__item--height2
+  height: 212px
+.grid-type-1__item--height3
+  height: 231px
+  +max-width-768
+    height: 178px
+  +max-width-480
+    height: 166px
+.grid-type-1__item--height4
+  height: 295px
+  +max-width-768
+    height: 155px
+  +max-width-480
+    height: 147px
+//        End masonry grid type 1
+
+//        Start masonry grid type 2
+//.grid-type-2__item
+  position: relative
+  width: 376px
+  height: 531px
+  float: left
+  margin: 10px
+  &:nth-child(4n+1)
+    margin-left: 0
+    margin-top: 9px
+  &:nth-child(2n)
+    margin-right: 0
+  &:nth-child(7)
+    margin-left: 0
+//.grid-type-2__item--width2
+  width: 764px
+//.grid-type-2__item--width3
+  width: 368px
+//.grid-type-2__item--width4
+  width: 768px
+//.grid-type-2__item--height2
+  height: 255px
+//        End masonry grid type 1
+
+.card__link
+  display: block
+  font-size: 0
+
+.card__image
+  display: block
+
+
+.card__overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .82))
+  color: $colorPrimary
+  -webkit-transition: all 0.7s
+  -moz-transition: all 0.7s
+  -ms-transition: all 0.7s
+  -o-transition: all 0.7s
+  transition: all 0.7s
+  .card__title
+    font-family: $montserrat
+    font-size: 21px
+    font-weight: $bold
+    text-align: left
+    padding: 37% 0 0 20px
+    -webkit-transition: all 0.4s
+    -moz-transition: all 0.4s
+    -ms-transition: all 0.4s
+    -o-transition: all 0.4s
+    transition: all 0.4s
+    +max-width-768
+      padding-top: 20px
+      font-size: 20px
+    .card__date
+      display: block
+
+.card__overlay
+  &:hover
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+    .card__title
+      padding-top: 33%
+
+.card__overlay--type2
+  position: absolute
+  top: 0
+  left: 0
+  background: rgba(0,0,0,.6)
+  width: 100%
+  height: 100%
+  color: $colorPrimary
+  .play-icon
+    position: absolute
+    top: 50%
+    left: 50%
+    font-size: 26px
+    line-height: 23px
+    -webkit-transform: translateX(-50%) translateY(-50%)
+    -moz-transform: translateX(-50%) translateY(-50%)
+    -ms-transform: translateX(-50%) translateY(-50%)
+    -o-transform: translateX(-50%) translateY(-50%)
+    transform: translateX(-50%) translateY(-50%)
+
+.date-share
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 23px 0 37px 0
+  +max-width-480
+    justify-content: center
+  .news-detail__date
+    +max-width-480
+      width: 100%
+      text-align: center

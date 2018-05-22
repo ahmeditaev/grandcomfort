@@ -1,0 +1,58 @@
+.shops
+  padding: 30px 0 41px 0
+  .text-right
+    +max-width-1200
+      margin-right: 20px
+.shop-list
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding-top: 21px
+  padding-bottom: 17px
+  +max-width-1200
+    padding-left: 10px
+    padding-right: 10px
+    justify-content: space-around
+.shop-list__item
+  line-height: 0
+  position: relative
+  margin-bottom: 14px
+.hover-scale
+  &:hover
+    .hover-scale__item
+      -webkit-transform: scale(1.2)
+      -moz-transform: scale(1.2)
+      -ms-transform: scale(1.2)
+      -o-transform: scale(1.2)
+      transform: scale(1.2)
+.shop-list__overlay
+  display: flex
+  justify-content: center
+  align-items: center
+.shop-list__logo
+  font-size: 24px
+  line-height: 28px
+  max-width: 100%
+  height: 31px
+  border: none
+  outline: 0
+  display: block
+  -webkit-transition: transform 0.4s
+  -moz-transition: transform 0.4s
+  -ms-transition: transform 0.4s
+  -o-transition: transform 0.4s
+  transition: transform 0.4s
+.shop-list__shop-name
+  display: inline-block
+  text-transform: uppercase
+  font-family: $roboto
+  font-weight: $black
+  font-size: 22px
+  line-height: 24px
+  padding: 0 50px
+  text-align: center
+  -webkit-transition: transform 0.4s
+  -moz-transition: transform 0.4s
+  -ms-transition: transform 0.4s
+  -o-transition: transform 0.4s
+  transition: transform 0.4s

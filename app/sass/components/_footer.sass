@@ -1,0 +1,30 @@
+.footer
+  padding: 20px 0
+  background: #2B2A2C
+.footer__wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  +max-width-992
+    justify-content: space-around
+.footer__copyrighted
+  font-family: $montserrat
+  font-weight: $regular
+  font-size: 14px
+  color: #8D8D8E
+  text-transform: uppercase
+.social-link--footer
+  margin-right: 0
+  border-left: 1px solid rgba(106,105,107, 0.35)
+.social-link__item--footer
+  padding-left: 17px
+  padding-right: 0
+  &:not(:last-child)
+    padding-right: 0
+  .social-link__link--footer
+    color: #8D8D8E
+    i
+      font-size: 21px
+.nav-menu
+  .nav-menu__link--footer
+    color: $colorPrimary

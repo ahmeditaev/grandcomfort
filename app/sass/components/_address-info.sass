@@ -1,0 +1,81 @@
+#map
+  width: 100%
+  height: 460px
+.address-info
+  position: relative
+.contact-info
+  position: absolute
+  top: 10%
+  left: 60%
+  max-width: 376px
+  max-height: 376px
+  width: 100%
+  height: 100%
+  padding: 26px 25px
+  background: $colorPrimary
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.12)
+  -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.12)
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.12)
+  +max-width-992
+    left: 10%
+  +max-width-480
+    max-width: 280px
+    left: 6%
+    top: 12%
+    padding: 26px 10px
+  &__title
+    display: block
+    text-transform: uppercase
+    font-family: $roboto
+    font-weight: $medium
+    font-size: 16px
+    margin-bottom: 30px
+    color: #D30813
+    line-height: 20px
+    text-align: left
+    span
+      display: block
+.contact-info--type2
+  position: relative
+  top: 0
+  left: 0
+  -webkit-box-shadow: none
+  -moz-box-shadow: none
+  box-shadow: none
+  padding: 0
+  +max-width-1128
+    max-width: 100%
+    text-align: center
+  .contact-info__title
+    border-bottom: 1px solid #D30813
+    line-height: 30px
+    margin-bottom: 45px
+    +max-width-1128
+      margin-top: 20px
+      margin-bottom: 30px
+      text-align: center
+  .contact-info-list
+    margin-bottom: 44px
+    +max-width-1128
+      margin-bottom: 15px
+.contact-info-list
+  margin-bottom: 30px
+  &__item
+    font-family: $montserrat
+    font-weight: $light
+    font-size: 20px
+    line-height: 43px
+    color: #2B2A2C
+    +max-width-480
+      line-height: 30px
+    i
+      margin-right: 17px
+    &:first-child
+      i
+        font-size: 25px
+    &:nth-child(3)
+      i
+        font-size: 23px
+    &:last-child
+      i
+        font-size: 23px
