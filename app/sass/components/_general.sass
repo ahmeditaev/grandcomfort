@@ -111,6 +111,7 @@ ul
 .grid-sizer
   width: 395px
 .grid-type-1__item
+  overflow: hidden
   position: relative
   width: 395px
   //width: 40%
@@ -180,6 +181,11 @@ ul
 
 .card__image
   display: block
+  -webkit-transition: all 0.4s
+  -moz-transition: all 0.4s
+  -ms-transition: all 0.4s
+  -o-transition: all 0.4s
+  transition: all 0.4s
 
 
 .card__overlay
@@ -211,6 +217,15 @@ ul
       font-size: 20px
     .card__date
       display: block
+
+.card__link
+  &:hover
+    img
+      -webkit-transform: scale(1.2)
+      -moz-transform: scale(1.2)
+      -ms-transform: scale(1.2)
+      -o-transform: scale(1.2)
+      transform: scale(1.2)
 
 .card__overlay
   &:hover
