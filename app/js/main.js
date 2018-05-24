@@ -35,7 +35,7 @@ $(document).ready(function () {
         dots: false,
         centerMode: false,
         focusOnSelect: true
-    })
+    });
 });
 var $gridTypeOne = $('.grid-type-1').masonry({
     itemSelector: '.grid-type-1__item',

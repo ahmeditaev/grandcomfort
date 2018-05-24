@@ -7,6 +7,7 @@
 		  rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/magnific/popup-box.css">
 	<link href="css/style.css" rel="stylesheet">
 	<title>Grand Comfort</title>
 </head>
@@ -228,23 +229,38 @@
 				<div class="video-list__item">
 					<img class="video-list__image img-responsive" src="uploads/video_image_1.jpg" width="376"
 						 height="184" alt="Preview Image">
-					<a href="#" class="card__overlay--type2">
+					<a href="#small-dialog-1" class="card__overlay--type2 popup-with-zoom-anim">
 						<i class="fa fa-play-circle play-icon" aria-hidden="true"></i>
 					</a>
+					<div id="small-dialog-1" class="mfp-hide small-dialog">
+						<iframe src="https://www.youtube.com/embed/hBSongJm2PQ" width="500"
+								height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+								allowfullscreen></iframe>
+					</div>
 				</div>
 				<div class="video-list__item">
 					<img class="video-list__image img-responsive" src="uploads/video_image_2.jpg" width="376"
 						 height="184" alt="Preview Image">
-					<a href="#" class="card__overlay--type2">
+					<a href="#small-dialog-2" class="card__overlay--type2 popup-with-zoom-anim">
 						<i class="fa fa-play-circle play-icon" aria-hidden="true"></i>
 					</a>
+					<div id="small-dialog-2" class="mfp-hide small-dialog">
+						<iframe src="https://www.youtube.com/embed/cCP7mgYhUJE" width="500"
+								height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+								allowfullscreen></iframe>
+					</div>
 				</div>
 				<div class="video-list__item">
 					<img class="video-list__image img-responsive" src="uploads/video_image_3.jpg" width="376"
 						 height="184" alt="Preview Image">
-					<a href="#" class="card__overlay--type2">
+					<a href="#small-dialog-3" class="card__overlay--type2 popup-with-zoom-anim">
 						<i class="fa fa-play-circle play-icon" aria-hidden="true"></i>
 					</a>
+					<div id="small-dialog-3" class="mfp-hide small-dialog">
+						<iframe src="https://www.youtube.com/embed/5MH2ZYGWdHc" width="500"
+								height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+								allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -308,9 +324,25 @@
 </div>
 <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
 <script src="vendor/masonry/masonry.pkgd.min.js"></script>
+<script src="vendor/magnific/jquery.magnific-popup.js"></script>
 <script src="js/main.js"></script>
 <script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUFbeZE2YRZgdsfEYg2I0BcqPJWCmVh9U&callback=initMap">
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+    });
 </script>
 </body>
 </html>
