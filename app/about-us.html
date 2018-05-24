@@ -7,6 +7,7 @@
 		  rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/magnific/popup-box.css">
 	<link href="css/style.css" rel="stylesheet">
 	<title>Grand Comfort</title>
 </head>
@@ -91,9 +92,14 @@
 				<div class="video-single">
 					<img class="video-single__image img-responsive" src="uploads/about-us_video_image.jpg" width="968"
 						 height="471" alt="Preview Image">
-					<a href="#" class="video-single__overlay card__overlay--type2">
+					<a href="#small-dialog" class="video-single__overlay card__overlay--type2 popup-with-zoom-anim">
 						<i class="fa fa-play-circle play-icon play-icon--big" aria-hidden="true"></i>
 					</a>
+					<div id="small-dialog" class="mfp-hide small-dialog">
+						<iframe src="https://www.youtube.com/embed/5MH2ZYGWdHc" width="500"
+								height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+								allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -156,9 +162,25 @@
 	</footer>
 </div>
 <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+<script src="vendor/magnific/jquery.magnific-popup.js"></script>
 <script src="js/main.js"></script>
 <script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUFbeZE2YRZgdsfEYg2I0BcqPJWCmVh9U&callback=initMap">
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+    });
 </script>
 </body>
 </html>
